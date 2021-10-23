@@ -29,7 +29,7 @@ public class TesteWeb {
         principalPage = new PrincipalPage(driver);
     }
 
-    @Test
+
     public void primeiroTeste(){
 
         String titulo = principalPage.getTitulo();
@@ -38,7 +38,7 @@ public class TesteWeb {
 
     }
 
-    @Test
+    
     public void segundoTeste(){
         cursosPage = new CursosPage(driver);
         principalPage.clickBotao();
