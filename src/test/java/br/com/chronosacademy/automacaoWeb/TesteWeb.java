@@ -38,7 +38,7 @@ public class TesteWeb {
 
     }
 
-    
+
     public void segundoTeste(){
         cursosPage = new CursosPage(driver);
         principalPage.clickBotao();
