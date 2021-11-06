@@ -2,7 +2,9 @@ package br.com.chronosacademy.pages;
 
 import br.com.chronosacademy.core.Driver;
 import br.com.chronosacademy.maps.EditAccountMap;
+import io.cucumber.java.eo.Se;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class EditAccountPage {
     EditAccountMap editAccountMap;
@@ -14,6 +16,7 @@ public class EditAccountPage {
 
     public void setFirstName(String firstName){
         Driver.visibilityOf(editAccountMap.inpFirstName);
+        Driver.aguardaOptions(new Select(editAccountMap.slcCountry));
         editAccountMap.inpFirstName.sendKeys(firstName);
     }
 

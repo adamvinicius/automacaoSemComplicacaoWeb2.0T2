@@ -21,4 +21,5 @@ public class NewAccountMap {
     @FindBy(css = "#register_btnundefined")
     public WebElement btnRegister;
 
+
 }
