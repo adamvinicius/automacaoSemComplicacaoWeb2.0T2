@@ -36,12 +36,14 @@ public class NewAccountPage {
 
     public void selectCountry(String country){
         Select select = new Select(newAccountMap.slcCountry);
+        Driver.aguardaOptions(select);
         select.selectByVisibleText(country);
 
     }
 
-    public void clickInpIagree(){
+    public NewAccountPage clickInpIagree(){
         newAccountMap.inpIagree.click();
+        return this;
     }
 
     public void clickBtnRegister(){
