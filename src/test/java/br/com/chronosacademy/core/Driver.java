@@ -63,7 +63,7 @@ public class Driver {
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setAcceptInsecureCerts(true);
-        
+
         boolean headless = Boolean.parseBoolean(System.getProperty("headless"));
 
         chromeOptions.setHeadless(headless);
